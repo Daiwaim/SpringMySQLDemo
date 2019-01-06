@@ -1,8 +1,8 @@
-jpa:
-  hibernate:
-    ddl-auto: none
-datasource:
-  url: jdbc:mysql://localhost:3306/spring_mysql_demo
-  username: spring_mysql_demo_user
-  password: thisRandomPassword
-  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_mysql_demo?serverTimezone=UTC
+    username: spring_mysql_demo_user
+    password: thisRandomPassword
